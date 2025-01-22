@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency-Converter</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body> 
+  <div>
+    <header>
+      <div
+        class="bg-[url('/src/blue-abstract-background-modern-gradient-vector-50754294.jpg')] h-96 bg-cover bg-no-repeat overflow-hidden">
+        <div>
+          <nav class="flex justify-between pr-6 lg:px-32 md:px-36 py-3 text-white bg-blue-700 sticky top:0">
+            <ul class="flex items-center md:gap-5 lg:gap-5">
+              <li class="font-semibold hidden md:inline-block lg:inline-block xl:inline-block">Personal </li>
+              <li class="font-semibold hidden md:inline-block lg:inline-block xl:inline-block">Business </li>
+            </ul>
+
+            <ul class=" flex items-center gap-6">
+              <li class="font-semibold hidden  xl:inline-block hover:border hover:bg-blue-400 hover:border-none">Send
+                Money</li>
+              <li class="font-semibold hidden  xl:inline-block hover:border hover:bg-blue-400 hover:border-none">
+                Converter</li>
+              <li class="font-semibold hidden  xl:inline-block hover:border hover:bg-blue-400 hover:border-none">
+                Currency API</li>
+              <li class="font-semibold hidden  xl:inline-block hover:border hover:bg-blue-400 hover:border-none">Tools
+              </li>
+              <li class="font-semibold hidden  xl:inline-block hover:border hover:bg-blue-400 hover:border-none">
+                Resources</li>
+            </ul>
+            <ul class="flex items-center gap-6">
+              <li class="font-semibold hidden xl:inline-block">Sign In</li>
+              <button
+                class="bg-blue-800 hidden sm:px-2 xl:inline-block px-6  py-2 rounded-lg font-semibold hover:text-gray-300 ">Register</button>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="burger-icon size-6 xl:hidden ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="close-icon size-6 hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </ul>
+          </nav>
+          <div class="burger-nav fixed right-0 z-50 h-svh w-svw bg-white list-none hidden">
+            <ul class="flex flex-col  pt-6 pl-6">
+              <li class="  border-b-2 py-2 ">Send Money</li>
+              <li class=" border-b-2 py-2 ">Converter</li>
+              <li class=" border-b-2 py-2 ">Currency API</li>
+              <li class=" border-b-2 py-2 ">Tools</li>
+              <li class=" border-b-2 py-2 ">Resources</li>
+            </ul>
+
+
+            <ul class=" pt-52 flex flex-col items-center px-6 gap-6 ">
+              <li class="font-semibold bg-blue-50 w-full text-center text-blue-600 py-3">Sign In</li>
+              <button class="bg-blue-600 text-white w-full px-6 py-2 rounded-lg font-semibold">Register</button>
+            </ul>
+          </div>
+
+          <div class=" py-10 px-4 lg:py-16 text-center">
+            <h1 class="font-semibold antialiased text-3xl text-white ">Trusted Global Currency Converter & Money
+              Transfers</h1>
+            <p class="text-white hidden md:inline-block lg:inline-block  lg:py-2">Best source for currency conversion, sending money online and tracking
+              exchange rates</p>
+          </div>
+        </div>
+    </header>
+    <section class="bg-white shadow-2xl md:py-20  rounded-lg  h-auto mx-26 md:mx-  -mt-40 ">
+      <div class="bg-gradient-to-r from-white from-15% to-blue-100 to-85% rounded-md border-solid ">
+        <nav>
+          <ul class="flex justify-between py-4 px-4 lg:justify-around lg:py-4 lg:px-6">
+            <li class="flex lg:3">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 text-gray-600">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+              </svg>
+              <p class="text-gray-600">Convert</p>
+            </li>
+            <li class="flex gap-3 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 text-gray-600">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+              </svg>
+              <p class="text-gray-600 ">Send</p>
+            </li>
+            <li class="flex gap-3 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 text-gray-600">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+              </svg>
+              <p class="text-gray-600">Charts</p>
+            </li>
+
+            <li class="flex gap-3 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 text-gray-600">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+              </svg>
+              <p class="text-gray-600 hidden ">Alerts</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="flex flex-col gap-1 md:flex-row lg:flex-row md:p-10 lg:p-10 px-6 lg:py-4 input">
+        <div class="w-full">
+          <p class="font-semibold mb-1">Amount</p>
+          <div>
+            <input class="border input-amount border-gray-300 shadow-sm py-3 px-3 w-full rounded-lg" type="text"
+              placeholder="$1">
+          </div>
+        </div>
+
+        <div class="w-full country-from">
+          <p class="font-semibold mb-1">From</p>
+          <div class="relative">
+            <input class="border border-gray-300 shadow-sm py-3 px-3 w-full rounded-lg input-from" type="text"
+              placeholder="$1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-5 country-icon absolute top-4 right-3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-5 hidden countryclose-icon absolute top-4 right-3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+
+            <div class=" country-nav absolute hidden bg-white w-full z-50 text-gray-700 px-4 h-32 mt-2 shadow-lg">
+              <ul class="country-underlister">
+            <li class="country-options"> <p class="hover:bg-gray-50 text-country">USD</p></li>
+             <li class="country-options"> <p class="hover:bg-gray-50 text-country">EUR</p></li>
+             <li class="country-options"> <P class="hover:bg-gray-50 text-country">CAD</P></li>
+             <li class="country-options">  <p class="hover:bg-gray-50 text-country">MXN</p></li>
+             <li class="country-options">  <p class="hover:bg-gray-50 text-country">NGN</p></li> 
+            </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 mt-5 hidden md:inline-block lg:inline-block  lg:mt-5 rounded-full p-4  ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="lg:size-6 size-5  text-blue-500 ">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+          </svg>
+        </div>
+
+        <div class="w-full country-to">
+          <p class="font-semibold mb-1">To</p>
+          <div class="relative">
+            <input
+              class="border border-gray-300 shadow-sm py-3 px-3 w-full input-to rounded-lg focus:border-4 focus:border-blue-300"
+              type="text" placeholder="$1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-5 country-iconn absolute top-4 right-3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-5 hidden countrycloser-icon absolute top-4 right-3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+
+            <div class="country-navv hidden absolute bg-white text-gray-700 w-full px-4 z-50 h-32  mt-2 shadow-lg ">
+              <ul class="country-underlist">
+            <li class="country-option">  <p class="hover:bg-gray-50 country-text">USD</p></li>
+             <li class="country-option"> <p class="hover:bg-gray-50  country-text">EUR</p> </li>
+             <li class="country-option">  <P class="hover:bg-gray-50  country-text">CAD</P> </li>
+             <li class="country-option">  <p class="hover:bg-gray-50  country-text">MXN</p> </li>
+             <li class="country-option">  <p class="hover:bg-gray-50  country-text">NGN</p> </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-8 px-10 currency-converted hidden">
+       <!-- <p class="mb-2 font-bold text-gray-600"> 200.00 Euros = </p>
+        <p class="mb-2 text-3xl font-bold text-gray-700">166.80282 British Pounds</p>
+        <div class="flex mb-2 gap-1 text-gray-500 text-sm">
+          <p>1 EUR </p>
+          <p>=</p>
+          <p>0.834117 GBP </p>
+        </div>
+        <div class="flex gap-1 text-gray-500 text-sm">
+          <p>1 GBP</p>
+          <p>=</p>
+          <p> 1.19880 EUR</p>
+        </div>
+        -->
+      </div>
+
+      <div
+        class="flex converter lg:flex-row md:flex-row relative py-8 mb-14  justify-between sm:gap-2 px-6 flex-col-reverse">
+        <div class=" flex gap-2 bg-blue-50 overflow-hidden px-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-5 mt-1 text-gray-600">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+          </svg>
+          <div class="flex sm:flex-none flex-col rounded-sm">
+            <span class="text-xs text-gray-600 lg:ml-2 sm:-ml-1  ">
+              We use the mid-market rate for our Converter.This is for informational purposes only.
+            </span>
+            <span class="text-xs text-gray-600 lg:ml-2 sm:-ml-1"> You won’t receive this rate when sending money. <a
+                class="text-blue-500 border-b-2 border-solid border-blue-200" href="#">Login to view send rates</a>
+            </span>
+          </div>
+        </div>
+          <button
+            class="bg-blue-700 button-converter flex justify-center lg:px-6 lg:py-3 md:px-6 md:py-3 py-3 sm:flex text-white rounded-lg">
+            Convert </button>
+            <div class="flex gap-3 button-converted hidden">
+              <button class="border-2 border-blue-600 px-10 py-3 text-blue-600 font-semibold rounded-lg"> Track
+                Currency</button>
+                <button class="bg-blue-700 px-6 py-3 text-white rounded-lg"> View Transfer Quote</button>
+            </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script type="module" src="/src/controller.js"></script>
+</html>
