@@ -67,8 +67,7 @@ class Navview {
 
   toggleConvertbutton() {
     this.#currencyConverted.classList.remove('hidden');
-    this.#buttonConverted.classList.remove('hidden');
-    this.#buttonConverter.classList.add('hidden'); 
+    
   }
 
 
@@ -106,9 +105,10 @@ export default new Navview();
 
 
 
+/*
+this.#buttonConverter.classList.add('hidden'); 
 
-
-
+*/
 
 /*
 class Navview {
